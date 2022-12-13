@@ -1,0 +1,60 @@
+* {
+    background-color: #000;
+    color: #fff;
+    font-family: 'Trebuchet MS';
+    margin: auto;
+    align-items: center;
+}
+
+nav{
+    list-style: none;
+    display: flex; 
+    justify-items: center;
+}
+
+.nav_item{
+    color: #fff;
+    text-decoration: none;
+    justify-items: center;
+}
+
+
+header, nav, li, footer{
+    background-color: #e61e28;
+}
+
+a{
+    background-color: rgba(255, 255, 255, 0);
+}
+
+
+
+.logo_header{
+    background-color: #e61e28;
+    width: 10%;
+}
+
+.logos_redes{
+    background-color: #e61e28;
+    width: 5%;
+}
+
+.fondo_m{
+    width: 100%;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon{
+    outline: black;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 50%;
+    border: 1px solid black;
+}
+
+body{
+    background-color: #000;
+}
+
+.derechos{
+    background-color: #e61e28;
+}
+
