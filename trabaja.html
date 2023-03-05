@@ -22,7 +22,7 @@
             <a href="megadibu.html" class="nav_item">CONOCÉ LA MEGADIBU</a>
             <a href="contacto.html" class="nav_item">CONTACTO Y SUGERENCIAS</a>
             <a href="trabaja.html" class="nav_item">TRABAJÁ CON NOSOTROS</a>
-            <a href="FranquiciaMostaza2022.pdf" class="nav_item">INFO PARA FRANQUICIA</a>
+            <a href="FranquiciaMostaza2022.pdf" class="nav_item" download="">INFO PARA FRANQUICIA</a>
         </nav>
     </header>
 
@@ -30,15 +30,16 @@
         <h2>
             <p>¡Trabajá con nosotros!</p>
         </h2>
-        <h3><u>Completá tus datos para sumarte a nuestro equipo y crear un usuario en Mostaza San Nicolás</u></h3>
+        <h4>Completá tus datos para sumarte a nuestro equipo y crear un usuario en Mostaza San Nicolás.</h4>
+        <br>
 
         <form method="" action="">
-            <b>Nombres:</b> <input type="text" name="nombre"><br><br>
-            <b>Apellidos:</b> <input type="text" name="apellido"><br><br>
-            <b>DNI:</b> <input type="text" name="dni"><br><br>
-            <b>Fecha de nacimiento:</b> <input type="text" name="edad"><br><br>
+            <b>Nombres:</b> <input type="text" name="nombre" required><br><br>
+            <b>Apellidos:</b> <input type="text" name="apellido" required><br><br>
+            <b>DNI:</b> <input type="text" name="dni" required><br><br>
+            <b>Fecha de nacimiento:</b> <input type="date" name="edad" required><br><br>
             <b>Sexo:</b> <br><br>
-            Masculino: <input type="radio" name="sexo"><br>
+            Masculino: <input type="radio" name="sexo" required><br>
             Femenino: <input type="radio" name="sexo"><br>
             Otro: <input type="radio" name="sexo"><br><br>
             <b>Estudios:</b> <select id="estudios" name="estudios">
@@ -47,42 +48,53 @@
                 <option value="ter">Terciario</option>
                 <option value="uni">Universitario</option>
             </select><br><br>
-            <b>Teléfono:</b> <input type="text" name="tel"><br><br>
-            <b>E-mail:</b> <input type="text" name="mail"><br><br>
-            <b>Nombre para tu usuario:</b> <input type="text" name="nombre_usuario"><br><br>
-            <b>Contraseña para tu usuario:</b> <input type="password" name="pass_usuario"><br>
+            <b>Teléfono:</b> <input type="number" name="tel" required><br><br>
+            <b>E-mail:</b> <input type="email" name="mail" required><br><br>
+            <b>Nombre para tu usuario:</b> <input type="text" name="nombre_usuario" required><br><br>
+            <b>Contraseña para tu usuario:</b> <input type="password" name="pass_usuario" required><br>
             <br><br>
-            <input type="submit" value="Enviar">
-            <input type="reset" value="Restablecer">
+            <input type="submit" class="button" value="Enviar">
+            <input type="reset" class="button" value="Restablecer">
         </form>
     </main>
 
-    <aside class="ad_aside">
-        <img class="app_ad_img" src="IMG/app.png" alt="Mostaza App Ad"><br>
-        <a href="https://apps.apple.com/ar/app/mostaza/id1276344983"
-            onclick="window.confirm('¿Estás seguro que querés salir?')" target="_blank"><img class="app_apple_img"
-                src="IMG/app_a.png" alt="Apple Store Logo"></a>
-        <a href="https://play.google.com/store/apps/details?id=com.candoit.mostaza"
-            onclick="window.confirm('¿Estás seguro que querés salir?')" target="_blank"><img class="app_google_img"
-                src="IMG/app_g.png" alt="Google Play Logo"></a>
-        <img src="IMG/ad_coca.jpg" alt="Coca Cola Ad">
+    <aside>
+
+        <div>
+            <div><img class="ad_app" src="IMG/app.png" alt="Mostaza App Ad"></div>
+            <div class="ad_but"> <a href="https://apps.apple.com/ar/app/mostaza/id1276344983"
+                    onclick="window.confirm('¿Estás seguro que querés salir?')" target="_blank"><img class="ad"
+                        src="IMG/app_a.png" alt="Apple Store Logo"></a>
+                <a href="https://play.google.com/store/apps/details?id=com.candoit.mostaza"
+                    onclick="window.confirm('¿Estás seguro que querés salir?')" target="_blank"><img class="ad"
+                        src="IMG/app_g.png" alt="Google Play Logo"></a>
+            </div>
+
+        </div>
+
+        <div><img class="ad_coca" src="IMG/ad_coca.jpg" alt="Coca Cola Ad"></div>
+
     </aside>
 
     <footer>
 
-        <img class="derechos" src="IMG/logo2.png" width="50" alt="Logo Mostaza">
-        <p class="derechos">©Mostaza y Leonel Tejedor 2022 Todos los derechos reservados</p>
+        <div class="div_foot">
+            <img class="derechos" src="IMG/logo2.png" width="50" alt="Logo Mostaza">
+            <p class="derechos">©Mostaza / Leonel Tejedor — 2023 — Todos los derechos reservados</p>
+        </div>
 
-        <a class="link_img" href="https://www.facebook.com/MostazaSocial" target="_blank"><img class="logos_redes"
-                src="IMG/logo_fb.png" alt="Logo Facebook"></a>
-        <a class="link_img" href="https://mobile.twitter.com/mostazasocial" target="_blank"><img class="logos_redes"
-                src="IMG/logo_tw.png" alt="Logo Twitter"></a>
-        <a class="link_img" href="https://www.tiktok.com/@mostazaok" target="_blank"><img class="logos_redes"
-                src="IMG/logo_tk.png" alt="Logo TikTok"></a>
-        <a class="link_img" href="https://www.instagram.com/mostazaok" target="_blank"><img class="logos_redes"
-                src="IMG/logo_ig.png" alt="Logo Instagram"></a>
-        <a class="link_img" href="https://wa.me/3364637730?text=Quiero%20que%20me%20contacten." target="_blank"><img
-                class="logos_redes" src="IMG/logo_wa.png" alt="Logo WhatsApp"></a>
+        <div class="div_foot">
+            <a class="link_img" href="https://www.facebook.com/MostazaSocial" target="_blank"><img class="logos_redes"
+                    src="IMG/logo_fb.png" alt="Logo Facebook"></a>
+            <a class="link_img" href="https://mobile.twitter.com/mostazasocial" target="_blank"><img class="logos_redes"
+                    src="IMG/logo_tw.png" alt="Logo Twitter"></a>
+            <a class="link_img" href="https://www.tiktok.com/@mostazaok" target="_blank"><img class="logos_redes"
+                    src="IMG/logo_tk.png" alt="Logo TikTok"></a>
+            <a class="link_img" href="https://www.instagram.com/mostazaok" target="_blank"><img class="logos_redes"
+                    src="IMG/logo_ig.png" alt="Logo Instagram"></a>
+            <a class="link_img" href="https://wa.me/3364637730?text=Quiero%20que%20me%20contacten." target="_blank"><img
+                    class="logos_redes" src="IMG/logo_wa.png" alt="Logo WhatsApp"></a>
+        </div>
     </footer>
 
 </body>
